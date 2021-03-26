@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const db = require('../db/db')
+const db = require('./db/db')
 const uuid = require('uuid')
 
 const noteValidate = function(note){
@@ -13,7 +13,7 @@ const postNote = function(note){
     note.id = uuid.v4()
     db.push(note)
     fs.writeFileSync(
-        path.join(__dirname, '../db/db.json'),
+        path.join(__dirname, '..db/db.json'),
         JSON.stringify( db , null, 2 )
     )
     return note
