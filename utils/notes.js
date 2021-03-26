@@ -1,4 +1,4 @@
-heroconst fs = require('fs')
+const fs = require('fs')
 const path = require('path')
 const db = require('./db/db')
 const uuid = require('uuid')
