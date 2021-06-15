@@ -13,7 +13,7 @@ const postNote = function(note){
     note.id = uuid.v4()
     db.push(note)
     fs.writeFileSync(
-        path.join(__dirname, '..db/db.json'),
+        path.join(__dirname, './db/db.json'),
         JSON.stringify( db , null, 2 )
     )
     return note
@@ -22,7 +22,7 @@ const postNote = function(note){
 const deleteNote = function(noteId){
     db.splice(db.findIndex(x=>x.id === noteId), 1)
     fs.writeFileSync(
-        path.join(__dirname, '../db/db.json'),
+        path.join(__dirname, 'np./db/db.json'),
         JSON.stringify( db , null, 2 )
     )
     return db

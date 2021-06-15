@@ -1,28 +1,30 @@
-  {
-    "name": "notetaker",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server.js",
-      "server": "nodemon"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https:https://github.com/xdaedx/note-taker"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/xdaedx/note-taker/issues"
-    },
-    "homepage": "https://github.com/xdaedx/note-taker",
-    "dependencies": {
-      "express": "^4.17.1",
-      "nodemon": "^2.0.7",
-      "path": "^0.12.7",
-      "uuid": "^8.3.2"
-    }
-  }
+{
+  "name": "notetaker",
+  "version": "1.0.0",
+  "description": "Note Taker Challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https:https://github.com/xdaedx/note-taker"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xdaedx/note-taker/issues"
+  },
+  "homepage": "https://github.com/xdaedx/note-taker",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^15.10.0",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {}
+}
